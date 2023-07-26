@@ -21,8 +21,8 @@ function updateScores(player, opponent) {
         player.score += 1;
         if (player.score === winnigScore) {
             isGameOver = true;
-            player.display.classList.add("has-text-danger");
-            opponent.display.classList.add("has-text-success");
+            player.display.classList.add("has-text-success");
+            opponent.display.classList.add("has-text-danger");
             player.button.disabled = true;
             opponent.button.disabled = true;
         }
